@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <form action="index.html"> 
+        <label for="name">Username:</label>
+        <input type="text" id="username" name="name" minlength="5" maxlength="6">
+        
+        <br> <br> <!--line breaks to be deleted once the CSS is learnt -->
+        
+        <label for="password">Password:</label>
+        <input type="password" id="passowrd" name="password" required>
+
+        <br> <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="phone" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+        <br> <br>
+        <!--radio button begins-->
+        <p>Gender</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+         <!--Checkbox begins-->
+        <p>Interests:</p>
+        <input type="checkbox" id="coding" name="interest" value="coding" />
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="sports" name="interest" value="sports" />
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="writing" name="interest" value="writing" />
+        <label for="writing">Writing</label>
+
+        <br> <br> <!--line breaks to be deleted once the CSS is learnt -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="srilanka">Srilanka</option>
+            <option value="india">India</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <br> <br> <!--line breaks to be deleted once the CSS is learnt -->
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" cols="50"></textarea>
+
+        <br> <br> <!--line breaks to be deleted once the CSS is learnt -->
+        <input type="submit" value="Submit" /> <!--Submit button-->
+    </form>
+</body>
+</html>
